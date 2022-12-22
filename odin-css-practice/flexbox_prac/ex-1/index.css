@@ -1,0 +1,25 @@
+*{
+    
+    margin: 10px;
+}
+
+.container{
+    background-color: lightblue;
+    border: 10px solid darkblue;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    display: flex;
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid maroon;
+    background-color: pink;
+    color: purple;
+}

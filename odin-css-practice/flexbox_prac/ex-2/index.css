@@ -1,0 +1,40 @@
+*{
+    font-family: monospace;
+}
+
+.container{
+    display: flex;
+    border: 2px solid white;
+    background-color: beige;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo{
+    margin: 10px;
+    border: 2px solid red;
+    display: flex;
+    color: tomato;
+}
+
+.left{
+    border: 2px solid red;
+    color: lightblue;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul{
+    display: flex;
+}
+
+.right{
+    border: 2px solid red;
+    color: lightblue;
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    background-color: white;
+}
