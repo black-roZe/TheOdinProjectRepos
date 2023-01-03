@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    background-color: #e74c3c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  nav a {
+    display: block;
+    padding: 20px 0;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  nav a:hover,
+  nav a:active {
+    background-color: #e74c3c;
+  }
+  
+  @keyframes change-color {
+    0% {
+      background-color: red;
+    }
+    50% {
+      background-color: yellow;
+    }
+    100% {
+      background-color: green;
+    }
+  }
+  
+  /* Apply the animation to a specific element */
+  a {
+    animation: change-color 5s infinite;
+  }

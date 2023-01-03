@@ -1,0 +1,101 @@
+*{
+    font-family: monospace;
+    background-color: black;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    font-size: 75px;
+    text-align: center;
+    font-weight: 800;
+}
+
+/* .text{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+} */
+
+.items{
+    margin: 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Rock, .Paper, .Scissor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    transition: 0.7s;
+}
+
+img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.Rock-image,.Paper-image,.Scissor-image{
+    align-items: center;
+    width: 200px;
+    height: auto;
+    transition: 0.6s;
+}
+
+.Rock-text,.Scissor-text,.Paper-text{
+    transition: 0.6s;
+    margin: 20px;
+}
+
+.Rock-text:hover,.Scissor-text:hover,.Paper-text:hover{
+    -webkit-text-stroke: 1px aliceblue;
+    color: transparent;
+    transform: scale(1.2);
+}
+
+.Rock-image:hover,.Paper-image:hover,.Scissor-image:hover{
+    transform: scale(1.2);
+    -webkit-text-stroke: 1px aliceblue;
+    color: transparent;
+}
+
+/* .design-block{
+    opacity: 0.3;
+    background-color: aliceblue;
+    width: 500px;
+    height: 309px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 33%;
+    margin-top: 30px;
+    z-index: -1;
+} */
+
+.choice{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.user-choice,.comp-choice{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+}
+.winner{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
