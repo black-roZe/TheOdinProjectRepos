@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .Rock, .Paper, .Scissor{
@@ -46,7 +46,6 @@ img{
     align-items: center;
     width: 200px;
     height: auto;
-    transition: 0.6s;
 }
 
 .Rock-text,.Scissor-text,.Paper-text{
@@ -60,11 +59,11 @@ img{
     transform: scale(1.2);
 }
 
-.Rock-image:hover,.Paper-image:hover,.Scissor-image:hover{
+/* .Rock-image:hover,.Paper-image:hover,.Scissor-image:hover{
     transform: scale(1.2);
     -webkit-text-stroke: 1px aliceblue;
     color: transparent;
-}
+} */
 
 /* .design-block{
     opacity: 0.3;
@@ -98,4 +97,20 @@ img{
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+}
+
+.Rock, .Paper, .Scissor{
+    transition: 0.5s;
+}
+
+.Rock:hover, .Paper:hover, .Scissor:hover{
+    border: 3px solid aliceblue;
+    transform: scale(1.2);
+}
+
+.restart{
+    margin:20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
 }

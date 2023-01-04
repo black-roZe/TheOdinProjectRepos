@@ -1,5 +1,36 @@
+
 //const prompt=require("prompt-sync")({sigint:true}); 
 let weapons=["Rock","Paper","Scissor"];
+
+let userT=document.querySelector(".choice .user-choice");
+let compT=document.querySelector(".choice .comp-choice");
+
+let compChoice,userChoice;
+
+let userRock=document.querySelector(".items .Rock");
+userRock.addEventListener("click",()=>{
+    userChoice="Rock";
+    compChoice=opponent();
+    makeWinner(compChoice,userChoice);
+    return;
+});
+let userPaper=document.querySelector(".items .Paper");
+userPaper.addEventListener("click",()=>{
+    userChoice="Paper";
+    compChoice=opponent();
+    makeWinner(compChoice,userChoice);
+    return;
+});
+let userScissor=document.querySelector(".items .Scissor");
+userScissor.addEventListener("click",()=>{
+    userChoice="Scissor";
+    compChoice=opponent();
+    makeWinner(compChoice,userChoice);
+    return;
+});
+
+let userNum=0,compNum=0,flag=0;
+const winner=document.querySelector('.winner');
 
 function opponent()
 {
@@ -61,23 +92,15 @@ function makeWinner(compChoice,userChoice)
 {
     if(flag==0)
     {
-        const uc=document.querySelectorAll(".choice .user-choice");
-        const cc=document.querySelectorAll(".choice .comp-choice");
         if(roundWinner(compChoice,userChoice)==-1)
         {
             compNum++;
-            cc[0].textContent("Computer:"+compNum);
-            console.log("comp won!");
+            compT.textContent="Computer:"+compNum;
         }
         else if(roundWinner(compChoice,userChoice)==1)
         {
             userNum++;
-            uc[0].textContent("User:"+userNum);
-            console.log("user won!");
-        }
-        else
-        {
-            console.log("tie!");
+            userT.textContent="User:"+userNum;
         }
     }
     if(compNum==5 || userNum==5)
@@ -93,36 +116,23 @@ function declareWinner()
     {
         if(userNum==5)
         {
-            winner.textContent("Winner:User");
+            winner.textContent="Winner:User";
         }
         else
         {
-            winner.textContent("Winner:Computer");
+            winner.textContent="Winner:Computer";
         }
+        let restart=document.createElement("btn");
+        restart.setAttribute("class","Rock");
+        restart.textContent="Restart";
+        restart.addEventListener("click",()=>{
+            location.reload();
+        });
+        let body=document.querySelector("body");
+        body.appendChild(restart);
+        flag=2;
     }
 }
 
-let userNum=0,compNum=0,flag=0;
-const winner=document.querySelector('.winner');
 
-while(userNum<5 && compNum<5)
-{
-    let userChoice;
-    const r=document.querySelectorAll(".items .Rock");
-    const s=document.querySelectorAll(".items .Scissor");
-    const p=document.querySelectorAll(".items .Paper");
-    r[0].addEventListener("click",()=>{
-        userChoice="Rock";
-        return "Rock";
-    });
-    s[0].addEventListener("click",()=>{
-        userChoice="Scissor";
-        return "Scissor";
-    });
-    p[0].addEventListener("click",()=>{
-        userChoice="Paper";
-        return "Paper";
-    });
-    let compChoice=opponent();
-    makeWinner(compChoice,userChoice);
-}
+
