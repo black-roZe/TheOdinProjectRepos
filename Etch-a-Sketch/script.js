@@ -15,6 +15,7 @@ if(value=="")
 {
     value="16";
 }
+
 value=Number(value);
 setup();
 
@@ -28,7 +29,7 @@ function setup()
         for(let j=0;j<value;j++)
         {
             let block=document.createElement("div");
-            let w=Math.floor(575/value);
+            let w=Math.ceil(575/value);
             block.style.width=w+"px";
             block.style.height=w+"px";
             block.style.backgroundColor="white";
