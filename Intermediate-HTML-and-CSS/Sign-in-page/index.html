@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet"> 
+    <title>Sign-In</title>
+</head>
+<body>
+    <div class="main-area">
+        <div class="image-container">
+            <img src="images/target.jpg" alt="cool photo" class="image">
+        </div>
+        <div class="form">
+            <div class="heading-container">
+            <h1 class="heading">出る杭は打たれる</h1>
+            </div>
+            <div>
+                <h4>
+
+                </h4>
+            </div>
+            <fieldset>
+                <form action="#" method="post">
+                    <div class="fields">
+                        <div class="left-part">
+                            <label for="first-name">
+                                First Name:
+                            </label>
+                            <input type="text" name="first-name" id="first-name" required>
+                            <label for="email">
+                                Email:
+                            </label>
+                            <input type="email" name="email" id="email" required>
+                            <label for="password">
+                                Password:
+                            </label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="right-part">
+                            <label for="last-name">
+                                Last Name:
+                            </label>
+                            <input type="text" name="first-name" id="first-name" required>
+                            <label for="mobile">
+                                Mobile:
+                            </label>
+                            <input type="number" name="email" id="email" pattern="[0-9]{10}" required>
+                            <label for="confirm">
+                                Confirm Password:
+                            </label>
+                            <input type="confirm" name="confirm" id="confirm" required>
+                        </div>
+                    </div>
+                    
+                </form>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

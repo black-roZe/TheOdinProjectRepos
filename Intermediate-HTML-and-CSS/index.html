@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Document</title>
+  </head>
+  <body>  
+      <form action="...">
+        <h1>Payemnt Form</h1>
+      <strong>Required fields are followed by *</strong>
+      <h3>Contact information</h3>
+      <section>
+        <fieldset>
+        <legend>Title</legend>
+        <label>
+          <input type="radio" value="K" name="title">King
+        </label>
+        <label>
+          <input type="radio" value="Q" name="title">Queen
+        </label>
+        <label>
+          <input type="radio" value="J" name="title">Joker
+        </label>
+      </fieldset>
+        <br>
+          <label for="Name">Name:</label>
+          <input type="text" id="Name" name="Name">
+          <br>
+          <label for="Email">Email:</label>
+          <input type="Email" id="Email" name="Email">
+          <br>
+          <label for="Password">Password:</label>
+          <input type="Password" id="Password" name="Password">
+          <br>
+          <h3>Payment Information</h3>
+          <select name="card" id="card">
+            <option value="visa">Visa</option>
+            <option value="mc">MasterCard</option>
+            <option value="Rupay">Rupay</option>
+          </select>
+            <label for="cn">Card Number</label>
+            <input type="number" name="cn" id="cn">
+            <label for="date">Expiration Date</label>
+            <input type="date">
+        </input>
+      </section>
+    </form>
+  </body>
+</html>
