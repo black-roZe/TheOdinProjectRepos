@@ -40,10 +40,10 @@
 .form{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    
 }
 
 .left-part{
@@ -61,7 +61,7 @@
 }
 
 .button{
-    margin: auto;
+    
 }
 
 label{
@@ -94,6 +94,7 @@ fieldset{
     border-radius: 10px;
     padding: 20px;
 }
+
 button{
     border-style: solid;
     border-color: black;
@@ -101,6 +102,11 @@ button{
     border-radius: 3px;
     padding: 10px;
     width: 100px;
+    height: 30px;
+    margin-left: 39.5%;
+    /* margin: auto; */
+    padding: 5px;
+    margin-top: 15px;
 }
 button:hover{
     cursor: pointer;
