@@ -5,5 +5,5 @@ heading.addEventListener("mouseover",()=>{
 });
 
 heading.addEventListener("mouseout",()=>{
-    heading.innerHTML="出る杭は打たれる";
+    heading.innerHTML="出 る 杭 は 打 た れ る";
 })
