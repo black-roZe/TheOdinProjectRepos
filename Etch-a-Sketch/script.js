@@ -49,7 +49,7 @@ function setup()
     });
 
     let blocks=document.querySelectorAll(".main .drawing-area .block");
-    blocks.forEach(block=>{
+    blocks.forEach((block)=>{
         block.addEventListener("mouseover",()=>{
             block.style.backgroundColor=color;
         });
@@ -57,7 +57,7 @@ function setup()
 
     let clear=document.querySelector(".main .properties .pen-type .clear");
     clear.addEventListener("click",()=>{
-        blocks.forEach(block=>{
+        blocks.forEach((block)=>{
             block.style.backgroundColor="white";
             color=colorElement.textContent;
         })
